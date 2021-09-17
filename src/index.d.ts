@@ -1,10 +1,8 @@
 import * as React from 'react'
 import {
-    FlexStyle,
     LayoutChangeEvent,
-    ShadowStyleIOS,
     StyleProp,
-    TransformsStyle,
+    ImageStyle
 } from 'react-native'
 
 declare namespace FastImage {
@@ -49,21 +47,6 @@ export type FastImageSource = {
     headers?: { [key: string]: string }
     priority?: FastImage.Priority
     cache?: FastImage.Cache
-}
-
-export interface ImageStyle extends FlexStyle, TransformsStyle, ShadowStyleIOS {
-    backfaceVisibility?: 'visible' | 'hidden'
-    borderBottomLeftRadius?: number
-    borderBottomRightRadius?: number
-    backgroundColor?: string
-    borderColor?: string
-    borderWidth?: number
-    borderRadius?: number
-    borderTopLeftRadius?: number
-    borderTopRightRadius?: number
-    overlayColor?: string
-    tintColor?: string
-    opacity?: number
 }
 
 export interface OnLoadEvent {
